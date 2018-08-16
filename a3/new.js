@@ -15,6 +15,8 @@ console.log(Date.now()-start);
 },2990);
 */
 
+/*
+
 console.log('stack traces');
 
 
@@ -29,29 +31,40 @@ function a(){
 }
 c();
 
+*/
+
 
 console.log('this function is inside new files');
-console.log(out.number);
+//console.log(out.number);
 
 // include new functions from another module and use 
+
+// a functional way to write like this 
 var d =require ('./moduleb.js');
-var w = new d(3,5);
+
+//var w = new d(3,5);
+
+console.log(d.minus(1,3));
+
+//a new method to test this required things
+
+var k = require('./moduleb');
+console.log(k.add(3,4));
+
+//extension is not required here
+
+//console.log(d.add(1,3));
+//console.log(w);
 
 
-console.log(d);
-console.log(w);
-
-*/
 
 
 // files handling system here
 
+/*
 var fs = require('fs');
 fs.readFile('1.txt', function (err,contents){
  if (!err) console.log(contents);
 }
 
-
-
-
-
+*/
